@@ -12,27 +12,25 @@
 .contact-form {
   margin: auto;
   padding: 20px;
+  max-width: 600px;
 }
 .contact-form__input-group {
   margin-bottom: 10px;
   display: flex;
   justify-content: right;
+  flex-wrap: wrap;
 }
-.contact-form__input-group input {
-  width: 80%;
+.contact-form__input-group input,
+.contact-form__input-group textarea {
+  width: 100%;
   border-radius: 5px;
   padding: 15px 10px;
   margin-bottom: 10px;
 }
-.contact-form__input-group textarea {
-  height: 100%;
-  width: 80%;
-  border-radius: 5px;
-  border: none;
-}
 .contact-form__input-group label {
   margin-right: 20px;
   color: #fff;
+  width: 100%;
 }
 .contact-form__input-group__btn {
   padding: 10px 20px;
@@ -41,8 +39,8 @@
   font-weight: 300;
   box-shadow: none;
   border: 1px solid rgb(48, 47, 47);
+  width: 100%;
 }
-
 
 .twitter__txt {
   border-bottom: 1px solid #fff;
@@ -69,7 +67,6 @@
   margin-bottom: 50px;
   padding-top: 30px;
 }
-
 
 .features-boxes__features-box {
   flex: 1 1 33.3333%;
@@ -113,6 +110,8 @@
 .menu {
   display: flex;
   list-style-type: none;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .menu li {
   margin: 0 10px;
@@ -127,7 +126,6 @@
   box-sizing: border-box;
 }
 
-
 body {
   text-align: center;
 }
@@ -141,6 +139,7 @@ header {
   display: flex;
   justify-content: space-around;
   margin-bottom: 100px;
+  flex-wrap: wrap;
 }
 .meetup__img {
   max-width: 200px;
@@ -173,7 +172,6 @@ header {
   color: rgb(105, 105, 105);
   margin-bottom: 30px;
 }
-
 
 .speaker {
   text-align: center;
@@ -218,7 +216,6 @@ header {
   margin-bottom: 50px;
 }
 
-
 .ticket__workshop-name {
   padding-bottom: 20px;
   font-weight: 300;
@@ -247,3 +244,8 @@ header {
   margin-top: 20px;
   cursor: pointer;
 }
+
+.content-responsive {
+  display: flex;
+  flex-direction: column;
+ }
